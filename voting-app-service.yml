@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Voting-service
+  labels:
+    name: voting-service
+    app: demo-voting-app
+spec:
+  type: LoadBalancer
+  ports:
+  - ports: 80
+    targetPort: 80
+  selector:
+    name: voting-app-pod
+    app: demo-voting-app
