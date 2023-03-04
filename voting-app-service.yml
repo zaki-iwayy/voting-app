@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Voting-service
+  name: voting-service
   labels:
     name: voting-service
     app: demo-voting-app
